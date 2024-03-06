@@ -1,0 +1,24 @@
+sandy@SandGarden:~$ cd Desktop/Story
+sandy@SandGarden:~/Desktop/Story$ git add ^C
+sandy@SandGarden:~/Desktop/Story$ chapter1.txt
+chapter1.txt: command not found
+sandy@SandGarden:~/Desktop/Story$ git add chapter1.txt
+fatal: pathspec 'chapter1.txt' did not match any files
+sandy@SandGarden:~/Desktop/Story$ git add Chapter1.txt
+sandy@SandGarden:~/Desktop/Story$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+	new file:   Chapter1.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	1stJah.txt
+	2ndJah.txt
+	3rdJah.txt
+
+sandy@SandGarden:~/Desktop/Story$ 
+

@@ -1,0 +1,116 @@
+<pre><font color="#8AE234"><b>sandy@SandGarden</b></font>:<font color="#729FCF"><b>~</b></font>$ cd Desktop/Story
+<font color="#8AE234"><b>sandy@SandGarden</b></font>:<font color="#729FCF"><b>~/Desktop/Story</b></font>$ git add ^C
+<font color="#8AE234"><b>sandy@SandGarden</b></font>:<font color="#729FCF"><b>~/Desktop/Story</b></font>$ chapter1.txt
+chapter1.txt: command not found
+<font color="#8AE234"><b>sandy@SandGarden</b></font>:<font color="#729FCF"><b>~/Desktop/Story</b></font>$ git add chapter1.txt
+fatal: pathspec &apos;chapter1.txt&apos; did not match any files
+<font color="#8AE234"><b>sandy@SandGarden</b></font>:<font color="#729FCF"><b>~/Desktop/Story</b></font>$ git add Chapter1.txt
+<font color="#8AE234"><b>sandy@SandGarden</b></font>:<font color="#729FCF"><b>~/Desktop/Story</b></font>$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use &quot;git rm --cached &lt;file&gt;...&quot; to unstage)
+	<font color="#4E9A06">new file:   Chapter1.txt</font>
+
+Untracked files:
+  (use &quot;git add &lt;file&gt;...&quot; to include in what will be committed)
+	<font color="#CC0000">1stJah.txt</font>
+	<font color="#CC0000">2ndJah.txt</font>
+	<font color="#CC0000">3rdJah.txt</font>
+
+<font color="#8AE234"><b>sandy@SandGarden</b></font>:<font color="#729FCF"><b>~/Desktop/Story</b></font>$ git commit -m&quot;Complete Chapter 1&quot;
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email &quot;you@example.com&quot;
+  git config --global user.name &quot;Your Name&quot;
+
+to set your account&apos;s default identity.
+Omit --global to set the identity only in this repository.
+
+<font color="#8AE234"><b>sandy@SandGarden</b></font>:<font color="#729FCF"><b>~/Desktop/Story</b></font>$ git config --global user.email &quot;marcomessina90121@gmail.com&quot;
+<font color="#8AE234"><b>sandy@SandGarden</b></font>:<font color="#729FCF"><b>~/Desktop/Story</b></font>$ git config --global user.name &quot;Marco&quot;
+<font color="#8AE234"><b>sandy@SandGarden</b></font>:<font color="#729FCF"><b>~/Desktop/Story</b></font>$ git commit -m&quot;Complete Chapter 1&quot;
+[master (root-commit) 716c6a0] Complete Chapter 1
+ 1 file changed, 1 insertion(+)
+ create mode 100644 Chapter1.txt
+<font color="#8AE234"><b>sandy@SandGarden</b></font>:<font color="#729FCF"><b>~/Desktop/Story</b></font>$ git log
+<font color="#C4A000">commit 716c6a0816e4cfa64ab7aab926d457c4e2600bce (</font><font color="#34E2E2"><b>HEAD -&gt; </b></font><font color="#8AE234"><b>master</b></font><font color="#C4A000">)</font>
+Author: Marco &lt;marcomessina90121@gmail.com&gt;
+Date:   Wed Mar 6 10:57:43 2024 +0200
+
+    Complete Chapter 1
+<font color="#8AE234"><b>sandy@SandGarden</b></font>:<font color="#729FCF"><b>~/Desktop/Story</b></font>$ touch chapter2.txt
+<font color="#8AE234"><b>sandy@SandGarden</b></font>:<font color="#729FCF"><b>~/Desktop/Story</b></font>$ touch chapter3.txt
+<font color="#8AE234"><b>sandy@SandGarden</b></font>:<font color="#729FCF"><b>~/Desktop/Story</b></font>$ open -a chapter2.txt
+xdg-open: unexpected option &apos;-a&apos;
+Try &apos;xdg-open --help&apos; for more information.
+<font color="#8AE234"><b>sandy@SandGarden</b></font>:<font color="#729FCF"><b>~/Desktop/Story</b></font>$ open -a /home/sandy/.var/app/com.visualstudio.code chapter2.txt
+xdg-open: unexpected option &apos;-a&apos;
+Try &apos;xdg-open --help&apos; for more information.
+<font color="#8AE234"><b>sandy@SandGarden</b></font>:<font color="#729FCF"><b>~/Desktop/Story</b></font>$ open -a Visual Studio Code chapter2.txt
+xdg-open: unexpected option &apos;-a&apos;
+Try &apos;xdg-open --help&apos; for more information.
+<font color="#8AE234"><b>sandy@SandGarden</b></font>:<font color="#729FCF"><b>~/Desktop/Story</b></font>$ xdg-open --help
+xdg-open - opens a file or URL in the user&apos;s preferred application
+
+Synopsis
+
+xdg-open { file | URL }
+
+xdg-open { --help | --manual | --version }
+
+Use &apos;man xdg-open&apos; or &apos;xdg-open --manual&apos; for additional info.
+<font color="#8AE234"><b>sandy@SandGarden</b></font>:<font color="#729FCF"><b>~/Desktop/Story</b></font>$ open -a VSCode chapter2.txt
+xdg-open: unexpected option &apos;-a&apos;
+Try &apos;xdg-open --help&apos; for more information.
+<font color="#8AE234"><b>sandy@SandGarden</b></font>:<font color="#729FCF"><b>~/Desktop/Story</b></font>$ open VSCode chapter2.txt
+xdg-open: unexpected argument &apos;chapter2.txt&apos;
+Try &apos;xdg-open --help&apos; for more information.
+<font color="#8AE234"><b>sandy@SandGarden</b></font>:<font color="#729FCF"><b>~/Desktop/Story</b></font>$ open -a /var/lib/flatpak/app/com.visualstudio.code/x86_64/stable/1ca9a657ba6d4687d52e262616c6a5a2352084266f81f11fb2c352ae2548930c/files/extra/vscode/code chapter2.txt
+xdg-open: unexpected option &apos;-a&apos;
+Try &apos;xdg-open --help&apos; for more information.
+<font color="#8AE234"><b>sandy@SandGarden</b></font>:<font color="#729FCF"><b>~/Desktop/Story</b></font>$ open /var/lib/flatpak/app/com.visualstudio.code/x86_64/stable/1ca9a657ba6d4687d52e262616c6a5a2352084266f81f11fb2c352ae2548930c/files/extra/vscode/code chapter2.txt
+xdg-open: unexpected argument &apos;chapter2.txt&apos;
+Try &apos;xdg-open --help&apos; for more information.
+<font color="#8AE234"><b>sandy@SandGarden</b></font>:<font color="#729FCF"><b>~/Desktop/Story</b></font>$ open /var/lib/flatpak/app/com.visualstudio.code/x86_64/stable/1ca9a657ba6d4687d52e262616c6a5a2352084266f81f11fb2c352ae2548930c/files/extra/vscode/code.app chapter2.txt
+xdg-open: unexpected argument &apos;chapter2.txt&apos;
+Try &apos;xdg-open --help&apos; for more information.
+<font color="#8AE234"><b>sandy@SandGarden</b></font>:<font color="#729FCF"><b>~/Desktop/Story</b></font>$ open VScode chapter2.txt
+xdg-open: unexpected argument &apos;chapter2.txt&apos;
+Try &apos;xdg-open --help&apos; for more information.
+<font color="#8AE234"><b>sandy@SandGarden</b></font>:<font color="#729FCF"><b>~/Desktop/Story</b></font>$ open chapter2.txt
+<font color="#8AE234"><b>sandy@SandGarden</b></font>:<font color="#729FCF"><b>~/Desktop/Story</b></font>$ chapter2.txt
+chapter2.txt: command not found
+<font color="#8AE234"><b>sandy@SandGarden</b></font>:<font color="#729FCF"><b>~/Desktop/Story</b></font>$ open visual\ studio\ code chapter2.txt
+xdg-open: unexpected argument &apos;chapter2.txt&apos;
+Try &apos;xdg-open --help&apos; for more information.
+<font color="#8AE234"><b>sandy@SandGarden</b></font>:<font color="#729FCF"><b>~/Desktop/Story</b></font>$ open visual\ studio\ code.app chapter2.txt
+xdg-open: unexpected argument &apos;chapter2.txt&apos;
+Try &apos;xdg-open --help&apos; for more information.
+<font color="#8AE234"><b>sandy@SandGarden</b></font>:<font color="#729FCF"><b>~/Desktop/Story</b></font>$ -a /var/lib/flatpak/app/com.visualstudio.code/x86_64/stable/1ca9a657ba6d4687d52e262616c6a5a2352084266f81f11fb2c352ae2548930c/files/extra/vscode/code chapter2.txt
+-a: command not found
+<font color="#8AE234"><b>sandy@SandGarden</b></font>:<font color="#729FCF"><b>~/Desktop/Story</b></font>$ /var/lib/flatpak/app/com.visualstudio.code/x86_64/stable/1ca9a657ba6d4687d52e262616c6a5a2352084266f81f11fb2c352ae2548930c/files/extra/vscode/code 
+<font color="#555753">[main 2024-03-06T11:41:03.714Z]</font> update#setState idle
+Xlib:  extension &quot;NV-GLX&quot; missing on display &quot;:0&quot;.
+<font color="#8AE234"><b>sandy@SandGarden</b></font>:<font color="#729FCF"><b>~/Desktop/Story</b></font>$ /var/lib/flatpak/app/com.visualstudio.code/x86_64/stable/1ca9a657ba6d4687d52e262616c6a5a2352084266f81f11fb2c352ae2548930c/files/extra/vscode/code-open chapter2.txt
+bash: /var/lib/flatpak/app/com.visualstudio.code/x86_64/stable/1ca9a657ba6d4687d52e262616c6a5a2352084266f81f11fb2c352ae2548930c/files/extra/vscode/code-open: No such file or directory
+<font color="#8AE234"><b>sandy@SandGarden</b></font>:<font color="#729FCF"><b>~/Desktop/Story</b></font>$ vscode-open chapter2.txt
+vscode-open: command not found
+<font color="#8AE234"><b>sandy@SandGarden</b></font>:<font color="#729FCF"><b>~/Desktop/Story</b></font>$ /var/lib/flatpak/app/com.visualstudio.code/x86_64/stable/1ca9a657ba6d4687d52e262616c6a5a2352084266f81f11fb2c352ae2548930c/files/extra/vscode/code-open~ chapter2.txt
+bash: /var/lib/flatpak/app/com.visualstudio.code/x86_64/stable/1ca9a657ba6d4687d52e262616c6a5a2352084266f8<font color="#8AE234"><b>sssssandy@SandGarden</b></font>:<font color="#729FCF"><b>~/Desktop/Story</b></font>$ /var/lib/flatpak/app/com.visualstudio.code/x86_64/stable/1ca9a657ba6d4687d52e262616c6a5a2352084266f81f11fb2c352ae2548930c/files/extra/vscode/code-open /home/sandy/Desktop/Story/chapter2.txt
+bash: /var/lib/flatpak/app/com.visualstudio.code/x86_64/stable/1ca9a657ba6d4687d52e262616c6a5a2352084266f81f11fb2c352ae2548930c/files/extra/vscode/code-open: No such file or directory
+<font color="#8AE234"><b>sandy@SandGarden</b></font>:<font color="#729FCF"><b>~/Desktop/Story</b></font>$ open -a /var/lib/flatpak/app/com.visualstudio.code/x86_64/stable/1ca9a657ba6d4687d52e262616c6a5a2352084266f81f11fb2c352ae2548930c/files/extra/vscode/code chapter2.txt
+xdg-open: unexpected option &apos;-a&apos;
+Try &apos;xdg-open --help&apos; for more information.
+<font color="#8AE234"><b>sandy@SandGarden</b></font>:<font color="#729FCF"><b>~/Desktop/Story</b></font>$ visual studio code
+visual: command not found
+<font color="#8AE234"><b>sandy@SandGarden</b></font>:<font color="#729FCF"><b>~/Desktop/Story</b></font>$ /var/lib/flatpak/app/com.visualstudio.code/x86_64/stable/1ca9a657ba6d4687d52e262616c6a5a2352084266f81f11fb2c352ae2548930c/files/extra/vscode/code chapter2.txt
+Xlib:  extension &quot;NV-GLX&quot; missing on display &quot;:0&quot;.
+<font color="#555753">[main 2024-03-06T11:53:20.544Z]</font> update#setState idle
+</pre>

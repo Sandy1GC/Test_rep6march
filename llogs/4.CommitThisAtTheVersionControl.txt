@@ -1,0 +1,21 @@
+sandy@SandGarden:~/Desktop/Story$ git commit -m"Complete Chapter 1"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+sandy@SandGarden:~/Desktop/Story$ git config --global user.email "marcomessina90121@gmail.com"
+sandy@SandGarden:~/Desktop/Story$ git config --global user.name "Marco"
+sandy@SandGarden:~/Desktop/Story$ git commit -m"Complete Chapter 1"
+[master (root-commit) 716c6a0] Complete Chapter 1
+ 1 file changed, 1 insertion(+)
+ create mode 100644 Chapter1.txt
+sandy@SandGarden:~/Desktop/Story$ 
+

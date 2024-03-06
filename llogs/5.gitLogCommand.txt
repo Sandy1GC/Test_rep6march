@@ -1,0 +1,39 @@
+sandy@SandGarden:~/Desktop/Story$ git log
+commit 716c6a0816e4cfa64ab7aab926d457c4e2600bce (HEAD -> master)
+Author: Marco <marcomessina90121@gmail.com>
+Date:   Wed Mar 6 10:57:43 2024 +0200
+
+    Complete Chapter 1
+sandy@SandGarden:~/Desktop/Story$ touch chapter2.txt
+sandy@SandGarden:~/Desktop/Story$ touch chapter3.txt
+sandy@SandGarden:~/Desktop/Story$ open -a chapter2.txt
+xdg-open: unexpected option '-a'
+Try 'xdg-open --help' for more information.
+sandy@SandGarden:~/Desktop/Story$ open -a /home/sandy/.var/app/com.visualstudio.code chapter2.txt
+xdg-open: unexpected option '-a'
+Try 'xdg-open --help' for more information.
+sandy@SandGarden:~/Desktop/Story$ open -a Visual Studio Code chapter2.txt
+xdg-open: unexpected option '-a'
+Try 'xdg-open --help' for more information.
+sandy@SandGarden:~/Desktop/Story$ xdg-open --help
+xdg-open - opens a file or URL in the user's preferred application
+
+Synopsis
+
+xdg-open { file | URL }
+
+xdg-open { --help | --manual | --version }
+
+Use 'man xdg-open' or 'xdg-open --manual' for additional info.
+sandy@SandGarden:~/Desktop/Story$ open -a VSCode chapter2.txt
+xdg-open: unexpected option '-a'
+Try 'xdg-open --help' for more information.
+sandy@SandGarden:~/Desktop/Story$ open VSCode chapter2.txt
+xdg-open: unexpected argument 'chapter2.txt'
+Try 'xdg-open --help' for more information.
+sandy@SandGarden:~/Desktop/Story$ 
+
+
+
+sandy@SandGarden:~$ locate -b vscode
+
